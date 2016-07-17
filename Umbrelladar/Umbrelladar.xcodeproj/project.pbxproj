@@ -15,6 +15,13 @@
 		5823E5BE1D3B0921005579A6 /* UmbrelladarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5823E5BD1D3B0921005579A6 /* UmbrelladarTests.m */; };
 		5823E5C91D3B0922005579A6 /* UmbrelladarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5823E5C81D3B0922005579A6 /* UmbrelladarUITests.m */; };
 		5823E5D81D3B0963005579A6 /* TrackedLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5823E5D71D3B0963005579A6 /* TrackedLocationsViewController.m */; };
+		5823E5DB1D3B10B4005579A6 /* TrackedLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5823E5DA1D3B10B4005579A6 /* TrackedLocationCell.m */; };
+		5823E5DE1D3B11F5005579A6 /* LocationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5823E5DD1D3B11F5005579A6 /* LocationsManager.m */; };
+		5823E5E11D3B1BAA005579A6 /* UmbrelladarCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5823E5DF1D3B1BAA005579A6 /* UmbrelladarCoreData.xcdatamodeld */; };
+		5823E5E91D3B1ED5005579A6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5823E5E81D3B1ED5005579A6 /* CoreData.framework */; };
+		5823E5EC1D3B2CDA005579A6 /* TrackedLocationsSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5823E5EB1D3B2CDA005579A6 /* TrackedLocationsSource.m */; };
+		5823E6091D3B35E0005579A6 /* Location+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5823E6061D3B35E0005579A6 /* Location+CoreDataProperties.m */; };
+		5823E60A1D3B35E0005579A6 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 5823E6081D3B35E0005579A6 /* Location.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,18 @@
 		5823E5CA1D3B0922005579A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5823E5D61D3B0963005579A6 /* TrackedLocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackedLocationsViewController.h; sourceTree = "<group>"; };
 		5823E5D71D3B0963005579A6 /* TrackedLocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackedLocationsViewController.m; sourceTree = "<group>"; };
+		5823E5D91D3B10B4005579A6 /* TrackedLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackedLocationCell.h; sourceTree = "<group>"; };
+		5823E5DA1D3B10B4005579A6 /* TrackedLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackedLocationCell.m; sourceTree = "<group>"; };
+		5823E5DC1D3B11F5005579A6 /* LocationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationsManager.h; sourceTree = "<group>"; };
+		5823E5DD1D3B11F5005579A6 /* LocationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsManager.m; sourceTree = "<group>"; };
+		5823E5E01D3B1BAA005579A6 /* UmbrelladarCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UmbrelladarCoreData.xcdatamodel; sourceTree = "<group>"; };
+		5823E5E81D3B1ED5005579A6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5823E5EA1D3B2CDA005579A6 /* TrackedLocationsSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackedLocationsSource.h; sourceTree = "<group>"; };
+		5823E5EB1D3B2CDA005579A6 /* TrackedLocationsSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackedLocationsSource.m; sourceTree = "<group>"; };
+		5823E6051D3B35E0005579A6 /* Location+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Location+CoreDataProperties.h"; path = "../Location+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5823E6061D3B35E0005579A6 /* Location+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Location+CoreDataProperties.m"; path = "../Location+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5823E6071D3B35E0005579A6 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = ../Location.h; sourceTree = "<group>"; };
+		5823E6081D3B35E0005579A6 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = ../Location.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5823E5E91D3B1ED5005579A6 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +101,7 @@
 		5823E5971D3B0921005579A6 = {
 			isa = PBXGroup;
 			children = (
+				5823E5E81D3B1ED5005579A6 /* CoreData.framework */,
 				5823E5A21D3B0921005579A6 /* Umbrelladar */,
 				5823E5BC1D3B0921005579A6 /* UmbrelladarTests */,
 				5823E5C71D3B0922005579A6 /* UmbrelladarUITests */,
@@ -101,15 +122,23 @@
 		5823E5A21D3B0921005579A6 /* Umbrelladar */ = {
 			isa = PBXGroup;
 			children = (
+				5823E6041D3B35A7005579A6 /* Model */,
 				5823E5A61D3B0921005579A6 /* AppDelegate.h */,
 				5823E5A71D3B0921005579A6 /* AppDelegate.m */,
 				5823E5AC1D3B0921005579A6 /* Main.storyboard */,
 				5823E5AF1D3B0921005579A6 /* Assets.xcassets */,
 				5823E5B11D3B0921005579A6 /* LaunchScreen.storyboard */,
 				5823E5B41D3B0921005579A6 /* Info.plist */,
-				5823E5A31D3B0921005579A6 /* Supporting Files */,
 				5823E5D61D3B0963005579A6 /* TrackedLocationsViewController.h */,
 				5823E5D71D3B0963005579A6 /* TrackedLocationsViewController.m */,
+				5823E5D91D3B10B4005579A6 /* TrackedLocationCell.h */,
+				5823E5DA1D3B10B4005579A6 /* TrackedLocationCell.m */,
+				5823E5DC1D3B11F5005579A6 /* LocationsManager.h */,
+				5823E5DD1D3B11F5005579A6 /* LocationsManager.m */,
+				5823E5EA1D3B2CDA005579A6 /* TrackedLocationsSource.h */,
+				5823E5EB1D3B2CDA005579A6 /* TrackedLocationsSource.m */,
+				5823E5DF1D3B1BAA005579A6 /* UmbrelladarCoreData.xcdatamodeld */,
+				5823E5A31D3B0921005579A6 /* Supporting Files */,
 			);
 			path = Umbrelladar;
 			sourceTree = "<group>";
@@ -138,6 +167,17 @@
 				5823E5CA1D3B0922005579A6 /* Info.plist */,
 			);
 			path = UmbrelladarUITests;
+			sourceTree = "<group>";
+		};
+		5823E6041D3B35A7005579A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5823E6051D3B35E0005579A6 /* Location+CoreDataProperties.h */,
+				5823E6061D3B35E0005579A6 /* Location+CoreDataProperties.m */,
+				5823E6071D3B35E0005579A6 /* Location.h */,
+				5823E6081D3B35E0005579A6 /* Location.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5823E5EC1D3B2CDA005579A6 /* TrackedLocationsSource.m in Sources */,
 				5823E5D81D3B0963005579A6 /* TrackedLocationsViewController.m in Sources */,
 				5823E5A81D3B0921005579A6 /* AppDelegate.m in Sources */,
 				5823E5A51D3B0921005579A6 /* main.m in Sources */,
+				5823E60A1D3B35E0005579A6 /* Location.m in Sources */,
+				5823E6091D3B35E0005579A6 /* Location+CoreDataProperties.m in Sources */,
+				5823E5DB1D3B10B4005579A6 /* TrackedLocationCell.m in Sources */,
+				5823E5E11D3B1BAA005579A6 /* UmbrelladarCoreData.xcdatamodeld in Sources */,
+				5823E5DE1D3B11F5005579A6 /* LocationsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +562,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5823E5DF1D3B1BAA005579A6 /* UmbrelladarCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5823E5E01D3B1BAA005579A6 /* UmbrelladarCoreData.xcdatamodel */,
+			);
+			currentVersion = 5823E5E01D3B1BAA005579A6 /* UmbrelladarCoreData.xcdatamodel */;
+			path = UmbrelladarCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5823E5981D3B0921005579A6 /* Project object */;
 }

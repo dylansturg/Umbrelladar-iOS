@@ -6,10 +6,13 @@
 //  Copyright © 2016 dylansturg. All rights reserved.
 //
 
+#import <CoreData/CoreData.h>
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @end
 
 @implementation AppDelegate
@@ -40,6 +43,56 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (NSManagedObjectContext *)managedObjectContext{
+    if(_managedObjectContext != nil){
+        return _managedObjectContext;
+    }
+    
+    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+    [_managedObjectContext setPersistentStoreCoordinator: [self persistentStoreCoordinator]];
+    
+    return _managedObjectContext;
+}
+
+- (NSManagedObjectModel *)managedObjectModel{
+    if(_managedObjectModel != nil){
+        return _managedObjectModel;
+    }
+    
+    NSURL *modelUrl = [[NSBundle mainBundle] URLForResource:@"UmbrelladarCoreData" withExtension:@"momd"];
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelUrl];
+    
+    return _managedObjectModel;
+}
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator{
+    if(_persistentStoreCoordinator != nil){
+        return _persistentStoreCoordinator;
+    }
+    
+    NSURL *sqliteStoreUrl = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Umbrelladar.sqlite"];
+    NSError *storeError;
+    
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
+    [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqliteStoreUrl options:nil error:&storeError];
+    
+    if(storeError){
+        
+    }
+    
+    return _persistentStoreCoordinator;
+}
+
+
+
+- (NSURL *)applicationDocumentsDirectory{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void)saveContext{
+    
 }
 
 @end
